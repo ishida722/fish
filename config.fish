@@ -19,6 +19,9 @@ alias cc="claude"
 alias yolo="claude --dangerously-skip-permissions"
 alias fish-reload="source ~/.config/fish/config.fish"
 
+# gh
+alias gh-login="BROWSER=noprompt gh auth login"
+
 # 日本語対応
 set -x LANG ja_JP.UTF-8
 set -x LC_ALL ja_JP.UTF-8
