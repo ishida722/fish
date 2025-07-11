@@ -8,8 +8,11 @@ alias gc="git commit"
 alias gcm="git commit -m"
 alias gl="git log --oneline --graph --all"
 alias ga="git add"
+alias gbr="git branch"
 alias push="git push"
 alias pull="git pull"
+alias gsw="git switch"
+alias gswc="git switch -c"
 
 # 色付き ls（Macの場合は gls 推奨）
 alias ls="ls --color=auto"
@@ -31,4 +34,9 @@ set -x PATH $HOME/.local/bin $PATH
 set -x PATH $HOME/.lmstudio/bin $PATH
 set -x PATH $HOME/go/bin $PATH
 set -x PATH /opt/homebrew/bin $PATH
+
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/ishida/.lmstudio/bin
+# End of LM Studio CLI section
 
