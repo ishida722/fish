@@ -37,9 +37,12 @@ set -x PATH $HOME/.local/bin $PATH
 set -x PATH $HOME/.lmstudio/bin $PATH
 set -x PATH $HOME/go/bin $PATH
 set -x PATH /opt/homebrew/bin $PATH
+set -x PATH $HOME/.cargo/bin $PATH
 
 
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH /Users/ishida/.lmstudio/bin
 # End of LM Studio CLI section
 
+set -gx SSH_AUTH_SOCK "$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+ulimit -n 65536
